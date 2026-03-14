@@ -1,5 +1,94 @@
 :root {
-  --font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  /* =========================
+     BACKGROUNDS
+  ========================= */
+  --bg-page: #f5f6fa;
+  --bg-sidebar: #ffffff;
+  --bg-card: #ffffff;
+  --bg-soft: #f9fafc;
+  --bg-hover: #f3f4f6;
+
+  /* =========================
+     PRIMARY / BRAND
+  ========================= */
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+  --primary-light: #a78bfa;
+  --primary-soft: #ede9fe;
+  --primary-gradient: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
+
+  /* =========================
+     TEXT
+  ========================= */
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --text-light: #d1d5db;
+  --text-white: #ffffff;
+
+  /* =========================
+     BORDERS / LINES
+  ========================= */
+  --border-light: #e5e7eb;
+  --border-soft: #eef1f5;
+  --divider: #f1f3f7;
+
+  /* =========================
+     SUCCESS
+  ========================= */
+  --success: #10b981;
+  --success-dark: #059669;
+  --success-bg: #d1fae5;
+
+  /* =========================
+     WARNING
+  ========================= */
+  --warning: #f59e0b;
+  --warning-dark: #d97706;
+  --warning-bg: #fef3c7;
+
+  /* =========================
+     DANGER
+  ========================= */
+  --danger: #ef4444;
+  --danger-dark: #dc2626;
+  --danger-bg: #fee2e2;
+
+  /* =========================
+     INFO
+  ========================= */
+  --info: #3b82f6;
+  --info-dark: #2563eb;
+  --info-bg: #dbeafe;
+
+  /* =========================
+     ACTIVITY / ICON BACKGROUNDS
+  ========================= */
+  --icon-purple-bg: #ede9fe;
+  --icon-blue-bg: #dbeafe;
+  --icon-green-bg: #d1fae5;
+  --icon-yellow-bg: #fef3c7;
+  --icon-red-bg: #fee2e2;
+
+  /* =========================
+     ACTIVITY DOT / ACCENT COLORS
+  ========================= */
+  --activity-blue: #60a5fa;
+  --activity-green: #34d399;
+  --activity-yellow: #fbbf24;
+  --activity-red: #f87171;
+
+  /* =========================
+     CHART / DATA VISUALS
+  ========================= */
+  --chart-primary: #7c3aed;
+  --chart-secondary: #a78bfa;
+
+  /* =========================
+     SHADOWS
+  ========================= */
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-md: 0 4px 12px rgba(16, 24, 40, 0.08);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -20,7 +109,6 @@
 
   --transition-fast: 0.2s ease;
 }
-
 *,
 *::before,
 *::after {
@@ -49,4 +137,25 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+/* NavBar */
+#second-navbar .nav-link {
+  color: var(--text-muted) !important;
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+#second-navbar .nav-link:hover {
+  background-color: var(--primary-light);
+  color: var(--primary) !important;
+}
+
+#second-navbar .nav-link.active {
+  border-color: var(--primary-light);
+  color: var(--primary) !important;
+  font-weight: 600;
 }
