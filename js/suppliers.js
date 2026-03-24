@@ -15,13 +15,14 @@ let searchBySupplierName = document.querySelector('#searchBySupplierName');
 searchBySupplierName.addEventListener('input', async () => {
     let searchInputValue = searchBySupplierName.value;
 
-    let search = await searchByName('suppliers', searchInputValue, showDatainTable);
+    let search = await searchByName('suppliers', searchInputValue);
     // console.log(search);
      if (search.length == 0) {
          showDatainTable.classList.add('dataNotMatch')
          showDatainTable.innerHTML = 'No Data Matched!!';
      }
      else{
+        showDatainTable.innerHTML=''
         renderDataAfterFilteration(search);  
          showDatainTable.classList.remove('dataNotMatch')
 
@@ -65,7 +66,6 @@ async function renderDataofSuppliers() {
 
 let modal = document.querySelector('.modal')
 modal.addEventListener('shown.bs.modal', function () {
-
     // ///////// validate SuppliersName /////////
     let supplierNameValidate = document.querySelector('#supplierName');
     supplierNameValidate.addEventListener('input', ()=> validateInputs('^[A-Za-z\\s]{3,60}$', supplierNameValidate ,'Please Enter Valid Supplier Name :\n  Must Name contains at  -> from 3 character to 40 character!!!'));
@@ -83,8 +83,8 @@ modal.addEventListener('shown.bs.modal', function () {
     phoneValidate.addEventListener('input', ()=> validateInputs('^01[0125][0-9]{8}$', phoneValidate ,'Enter valid Egyptian phone number!!'));
 
      //  ///////// validate select /////////
-    let selectValidate = document.querySelector('#select');
-    selectValidate.validateSelect(selectValidate)
+    // let selectValidate = document.querySelector('#select');
+    // selectValidate.validateSelect(selectValidate)
 
     //  ///////// validate Physical Address /////////
     let physicalAddressValidate = document.querySelector('#physicalAddress');

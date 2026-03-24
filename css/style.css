@@ -153,6 +153,7 @@ textarea {
    font-size: 18px;
    font-weight: bold;
    padding-top: 20px;
+   overflow-x: hidden;
 }
 
 /*y NavBar */
