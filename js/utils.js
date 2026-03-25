@@ -33,7 +33,8 @@ function renderNavbar(activePage) {
     { label: "Categories", icon: "fa-tags", href: "categories.html" },
     { label: "Suppliers", icon: "fa-truck", href: "suppliers.html" },
     { label: "Orders", icon: "fa-cart-shopping", href: "orders.html" },
-    { label: "Reports", icon: "fa-chart-bar", href: "reports.html" },
+    { label: "InventoryInsights", icon: "fa-chart-bar", href: "inventoryInsights.html" },
+    { label: "InventoryOverview", icon: "fa-chart-bar", href: "inventoryOverview.html" },
   ];
 
   const navItems = pages
@@ -41,7 +42,7 @@ function renderNavbar(activePage) {
       (page) => `
     <li class="nav-item">
         <a class="nav-link ${activePage === page.label ? "active" : ""}" href="${page.href}">
-            <i class="fas ${page.icon} me-1"></i>${page.label}
+            <i class="fas ${page.icon} me-1"></i>${((page.label).split('y')).join('y ')}
         </a>
     </li>
   `,
@@ -103,19 +104,19 @@ const showMoal = function () {
  * @param {*} searchInputValue :--> search input Selector
  * @param {*} dataInInnerHTML :--> tbody (table)
  * @returns 
- */ 
-    //  search By Name
+ */
+// ^ search By Name
 async function searchByName(endpoint, searchInputValue) {
   let pageData = await getData(`${endpoint}`)
   let dataAfterFilteration = pageData.filter((data) => {
-    return data.name.toLowerCase().includes(searchInputValue.toLowerCase()) || data.contactPerson.toLowerCase().includes(searchInputValue.toLowerCase()) || data.email.toLowerCase().includes(searchInputValue.toLowerCase()) 
+    return data.name.toLowerCase().includes(searchInputValue.toLowerCase()) || data.contactPerson.toLowerCase().includes(searchInputValue.toLowerCase()) || data.email.toLowerCase().includes(searchInputValue.toLowerCase())
   });
-    return dataAfterFilteration;
+  return dataAfterFilteration;
 
 }
 
-  //  filter By Status
-async function filterByStatus(selectValue , endpoint) {
+// ^ filter By Status
+async function filterByStatus(selectValue, endpoint) {
   let pageData = await getData(`${endpoint}`)
   if (selectValue.value !== '') {
     return pageData.filter((data) => {
