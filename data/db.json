@@ -785,5 +785,112 @@
             "status": "Inactive"
         }
     ],
-    "stockMovements": []
+    "stockMovements": [],
+    "admins": [
+        {
+            "id": 1,
+            "name": "Ahmed Hassan",
+            "username": "ahmed.hassan",
+            "email": "ahmed.hassan@inventory.com",
+            "password": "Ahm@1234"
+        },
+        {
+            "id": 2,
+            "name": "Sara Mohamed",
+            "username": "sara.mohamed",
+            "email": "sara.mohamed@inventory.com",
+            "password": "Sar@5678"
+        },
+        {
+            "id": 3,
+            "name": "Omar Ali",
+            "username": "omar.ali",
+            "email": "omar.ali@inventory.com",
+            "password": "Oma@9012"
+        },
+        {
+            "id": 4,
+            "name": "Mona Ibrahim",
+            "username": "mona.ibrahim",
+            "email": "mona.ibrahim@inventory.com",
+            "password": "Mon@3456"
+        },
+        {
+            "id": 5,
+            "name": "Youssef Khaled",
+            "username": "youssef.khaled",
+            "email": "youssef.khaled@inventory.com",
+            "password": "You@7890"
+        },
+        {
+            "id": 6,
+            "name": "Nour Ahmed",
+            "username": "nour.ahmed",
+            "email": "nour.ahmed@inventory.com",
+            "password": "Nou@1122"
+        },
+        {
+            "id": 7,
+            "name": "Mahmoud Samy",
+            "username": "mahmoud.samy",
+            "email": "mahmoud.samy@inventory.com",
+            "password": "Mah@3344"
+        },
+        {
+            "id": 8,
+            "name": "Huda Adel",
+            "username": "huda.adel",
+            "email": "huda.adel@inventory.com",
+            "password": "Hud@5566"
+        },
+        {
+            "id": 9,
+            "name": "Karim Tarek",
+            "username": "karim.tarek",
+            "email": "karim.tarek@inventory.com",
+            "password": "Kar@7788"
+        },
+        {
+            "id": 10,
+            "name": "Salma Mostafa",
+            "username": "salma.mostafa",
+            "email": "salma.mostafa@inventory.com",
+            "password": "Sal@9900"
+        },
+        {
+            "id": 11,
+            "name": "Hassan Fathy",
+            "username": "hassan.fathy",
+            "email": "hassan.fathy@inventory.com",
+            "password": "Has@2468"
+        },
+        {
+            "id": 12,
+            "name": "Dina Sherif",
+            "username": "dina.sherif",
+            "email": "dina.sherif@inventory.com",
+            "password": "Din@1357"
+        },
+        {
+            "id": 13,
+            "name": "Tamer Nabil",
+            "username": "tamer.nabil",
+            "email": "tamer.nabil@inventory.com",
+            "password": "Tam@8642"
+        },
+        {
+            "id": 14,
+            "name": "Reem Ashraf",
+            "username": "reem.ashraf",
+            "email": "reem.ashraf@inventory.com",
+            "password": "Ree@9753"
+        },
+        {
+            "id": 15,
+            "name": "Mostafa Adel",
+            "username": "mostafa.adel",
+            "email": "mostafa.adel@inventory.com",
+            "password": "Mos@4826"
+        }
+    ]
 }
