@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "id": 1,
+            "id": "1",
             "name": "Wireless Mouse",
             "sku": "P-001",
             "categoryId": 1,
@@ -15,7 +15,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 2,
+            "id": "2",
             "name": "Mechanical Keyboard",
             "sku": "P-002",
             "categoryId": 1,
@@ -29,7 +29,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "Gaming Headset",
             "sku": "P-003",
             "categoryId": 1,
@@ -43,7 +43,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "USB Flash 32GB",
             "sku": "P-004",
             "categoryId": 1,
@@ -57,7 +57,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 5,
+            "id": "5",
             "name": "LED Monitor 24\"",
             "sku": "P-005",
             "categoryId": 2,
@@ -71,7 +71,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 6,
+            "id": "6",
             "name": "Curved Monitor 27\"",
             "sku": "P-006",
             "categoryId": 2,
@@ -85,7 +85,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 7,
+            "id": "7",
             "name": "Laptop Core i5",
             "sku": "P-007",
             "categoryId": 3,
@@ -99,7 +99,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 8,
+            "id": "8",
             "name": "Laptop Core i7",
             "sku": "P-008",
             "categoryId": 3,
@@ -113,7 +113,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 9,
+            "id": "9",
             "name": "Office Chair",
             "sku": "P-009",
             "categoryId": 4,
@@ -127,7 +127,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 10,
+            "id": "10",
             "name": "Desk Table",
             "sku": "P-010",
             "categoryId": 4,
@@ -141,7 +141,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 11,
+            "id": "11",
             "name": "Printer",
             "sku": "P-011",
             "categoryId": 5,
@@ -155,7 +155,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 12,
+            "id": "12",
             "name": "Scanner",
             "sku": "P-012",
             "categoryId": 5,
@@ -169,7 +169,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 13,
+            "id": "13",
             "name": "Router",
             "sku": "P-013",
             "categoryId": 6,
@@ -183,7 +183,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 14,
+            "id": "14",
             "name": "Switch 8-Port",
             "sku": "P-014",
             "categoryId": 6,
@@ -197,7 +197,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 15,
+            "id": "15",
             "name": "External HDD 1TB",
             "sku": "P-015",
             "categoryId": 7,
@@ -211,7 +211,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 16,
+            "id": "16",
             "name": "SSD 512GB",
             "sku": "P-016",
             "categoryId": 7,
@@ -225,7 +225,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 17,
+            "id": "17",
             "name": "Smartphone A",
             "sku": "P-017",
             "categoryId": 8,
@@ -239,7 +239,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 18,
+            "id": "18",
             "name": "Smartphone B",
             "sku": "P-018",
             "categoryId": 8,
@@ -253,7 +253,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 19,
+            "id": "19",
             "name": "Tablet 10\"",
             "sku": "P-019",
             "categoryId": 9,
@@ -267,7 +267,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 20,
+            "id": "20",
             "name": "Tablet Pro",
             "sku": "P-020",
             "categoryId": 9,
@@ -281,7 +281,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 21,
+            "id": "21",
             "name": "Power Bank",
             "sku": "P-021",
             "categoryId": 10,
@@ -295,7 +295,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 22,
+            "id": "22",
             "name": "Charging Cable",
             "sku": "P-022",
             "categoryId": 10,
@@ -309,7 +309,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 23,
+            "id": "23",
             "name": "Webcam",
             "sku": "P-023",
             "categoryId": 1,
@@ -323,7 +323,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 24,
+            "id": "24",
             "name": "Microphone",
             "sku": "P-024",
             "categoryId": 1,
@@ -337,7 +337,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 25,
+            "id": "25",
             "name": "Graphics Card",
             "sku": "P-025",
             "categoryId": 3,
@@ -351,7 +351,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 26,
+            "id": "26",
             "name": "RAM 16GB",
             "sku": "P-026",
             "categoryId": 3,
@@ -365,7 +365,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 27,
+            "id": "27",
             "name": "CPU Cooler",
             "sku": "P-027",
             "categoryId": 3,
@@ -379,7 +379,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 28,
+            "id": "28",
             "name": "Motherboard",
             "sku": "P-028",
             "categoryId": 3,
@@ -393,7 +393,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 29,
+            "id": "29",
             "name": "Projector",
             "sku": "P-029",
             "categoryId": 2,
@@ -407,7 +407,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 30,
+            "id": "30",
             "name": "HDMI Cable",
             "sku": "P-030",
             "categoryId": 1,
@@ -421,7 +421,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 31,
+            "id": "31",
             "name": "Smart Watch",
             "sku": "P-031",
             "categoryId": 8,
@@ -435,7 +435,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 32,
+            "id": "32",
             "name": "Bluetooth Speaker",
             "sku": "P-032",
             "categoryId": 8,
@@ -449,7 +449,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 33,
+            "id": "33",
             "name": "Camera",
             "sku": "P-033",
             "categoryId": 9,
@@ -463,7 +463,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 34,
+            "id": "34",
             "name": "Tripod",
             "sku": "P-034",
             "categoryId": 9,
@@ -477,7 +477,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 35,
+            "id": "35",
             "name": "Extension Cord",
             "sku": "P-035",
             "categoryId": 10,
@@ -491,7 +491,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 36,
+            "id": "36",
             "name": "UPS",
             "sku": "P-036",
             "categoryId": 10,
@@ -505,7 +505,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 37,
+            "id": "37",
             "name": "Mouse Pad",
             "sku": "P-037",
             "categoryId": 1,
@@ -519,7 +519,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 38,
+            "id": "38",
             "name": "Laptop Stand",
             "sku": "P-038",
             "categoryId": 1,
@@ -533,7 +533,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 39,
+            "id": "39",
             "name": "Desk Lamp",
             "sku": "P-039",
             "categoryId": 4,
@@ -547,7 +547,7 @@
             "createdAt": "2026-03-22"
         },
         {
-            "id": 40,
+            "id": "40",
             "name": "Whiteboard",
             "sku": "P-040",
             "categoryId": 4,
@@ -564,48 +564,58 @@
     "categories": [
         {
             "id": 1,
-            "name": "Accessories"
+            "name": "Accessories",
+            "description": "Keyboards, mice, headsets, and other peripheral accessories"
         },
         {
             "id": 2,
-            "name": "Displays"
+            "name": "Displays",
+            "description": "Monitors, screens, and display units for workstations"
         },
         {
             "id": 3,
-            "name": "Computers"
+            "name": "Computers",
+            "description": "Desktops, laptops, and all-in-one computing systems"
         },
         {
             "id": 4,
-            "name": "Furniture"
+            "name": "Furniture",
+            "description": "Office desks, chairs, and workspace furniture"
         },
         {
             "id": 5,
-            "name": "Office Equipment"
+            "name": "Office Equipment",
+            "description": "Printers, scanners, projectors, and office machines"
         },
         {
             "id": 6,
-            "name": "Networking"
+            "name": "Networking",
+            "description": "Routers, switches, access points, and network hardware"
         },
         {
             "id": 7,
-            "name": "Storage"
+            "name": "Storage",
+            "description": "Hard drives, SSDs, USB drives, and storage solutions"
         },
         {
             "id": 8,
-            "name": "Mobile Devices"
+            "name": "Mobile Devices",
+            "description": "Smartphones, tablets, and portable smart devices"
         },
         {
             "id": 9,
-            "name": "Cameras"
+            "name": "Cameras",
+            "description": "Digital cameras, webcams, and photography equipment"
         },
         {
             "id": 10,
-            "name": "Power & Cables"
+            "name": "Power & Cables",
+            "description": "Power strips, adapters, charging cables, and connectors"
         }
     ],
     "suppliers": [
         {
-            "id": 1,
+            "id": "1",
             "name": "Tech Source",
             "contactPerson": "Ahmed Ali",
             "phone": "01000000001",
@@ -614,7 +624,7 @@
             "status": "Active"
         },
         {
-            "id": 2,
+            "id": "2",
             "name": "Digital Hub",
             "contactPerson": "Sara Mohamed",
             "phone": "01000000002",
@@ -623,7 +633,7 @@
             "status": "Inactive"
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "Global Tech",
             "contactPerson": "Omar Hassan",
             "phone": "01000000003",
@@ -632,7 +642,7 @@
             "status": "Active"
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "IT World",
             "contactPerson": "Mona Adel",
             "phone": "01000000004",
@@ -641,7 +651,7 @@
             "status": "Active"
         },
         {
-            "id": 5,
+            "id": "5",
             "name": "Future Supplies",
             "contactPerson": "Khaled Samy",
             "phone": "01000000005",
@@ -650,7 +660,7 @@
             "status": "Inactive"
         },
         {
-            "id": 6,
+            "id": "6",
             "name": "Smart Solutions",
             "contactPerson": "Nour Ibrahim",
             "phone": "01000000006",
@@ -659,7 +669,7 @@
             "status": "Active"
         },
         {
-            "id": 7,
+            "id": "7",
             "name": "Network Pro",
             "contactPerson": "Youssef Tarek",
             "phone": "01000000007",
@@ -668,7 +678,7 @@
             "status": "Active"
         },
         {
-            "id": 8,
+            "id": "8",
             "name": "Office Plus",
             "contactPerson": "Heba Mostafa",
             "phone": "01000000008",
@@ -677,7 +687,7 @@
             "status": "Inactive"
         },
         {
-            "id": 9,
+            "id": "9",
             "name": "Storage Hub",
             "contactPerson": "Mahmoud Fathy",
             "phone": "01000000009",
@@ -686,7 +696,7 @@
             "status": "Active"
         },
         {
-            "id": 10,
+            "id": "10",
             "name": "PowerTech",
             "contactPerson": "Aya Khalil",
             "phone": "01000000010",
@@ -695,7 +705,7 @@
             "status": "Active"
         },
         {
-            "id": 11,
+            "id": "11",
             "name": "Alpha Supplies",
             "contactPerson": "Ali Nasser",
             "phone": "01000000011",
@@ -704,7 +714,7 @@
             "status": "Inactive"
         },
         {
-            "id": 12,
+            "id": "12",
             "name": "Beta Tech",
             "contactPerson": "Salma Hany",
             "phone": "01000000012",
@@ -713,7 +723,7 @@
             "status": "Active"
         },
         {
-            "id": 13,
+            "id": "13",
             "name": "Gamma Systems",
             "contactPerson": "Hossam Ali",
             "phone": "01000000013",
@@ -722,7 +732,7 @@
             "status": "Active"
         },
         {
-            "id": 14,
+            "id": "14",
             "name": "Delta Traders",
             "contactPerson": "Dina Wael",
             "phone": "01000000014",
@@ -731,7 +741,7 @@
             "status": "Inactive"
         },
         {
-            "id": 15,
+            "id": "15",
             "name": "Epsilon Corp",
             "contactPerson": "Karim Adel",
             "phone": "01000000015",
@@ -740,7 +750,7 @@
             "status": "Active"
         },
         {
-            "id": 16,
+            "id": "16",
             "name": "Zeta Supplies",
             "contactPerson": "Farah Ahmed",
             "phone": "01000000016",
@@ -749,7 +759,7 @@
             "status": "Active"
         },
         {
-            "id": 17,
+            "id": "17",
             "name": "Omega Tech",
             "contactPerson": "Tamer Yassin",
             "phone": "01000000017",
@@ -758,7 +768,7 @@
             "status": "Inactive"
         },
         {
-            "id": 18,
+            "id": "18",
             "name": "Prime Solutions",
             "contactPerson": "Rania Samir",
             "phone": "01000000018",
@@ -767,7 +777,7 @@
             "status": "Active"
         },
         {
-            "id": 19,
+            "id": "19",
             "name": "NextGen IT",
             "contactPerson": "Mostafa Khaled",
             "phone": "01000000019",
@@ -776,7 +786,7 @@
             "status": "Active"
         },
         {
-            "id": 20,
+            "id": "20",
             "name": "Vision Supplies",
             "contactPerson": "Nadine Ashraf",
             "phone": "01000000020",
@@ -785,5 +795,113 @@
             "status": "Inactive"
         }
     ],
-    "stockMovements": []
+    "stockMovements": [],
+    "admins": [
+        {
+            "id": "1",
+            "name": "Ahmed Hassan",
+            "username": "ahmed.hassan",
+            "email": "ahmed.hassan@inventory.com",
+            "password": "Ahm@1234"
+        },
+        {
+            "id": "2",
+            "name": "Sara Mohamed",
+            "username": "sara.mohamed",
+            "email": "sara.mohamed@inventory.com",
+            "password": "Sar@5678"
+        },
+        {
+            "id": "3",
+            "name": "Omar Ali",
+            "username": "omar.ali",
+            "email": "omar.ali@inventory.com",
+            "password": "Oma@9012"
+        },
+        {
+            "id": "4",
+            "name": "Mona Ibrahim",
+            "username": "mona.ibrahim",
+            "email": "mona.ibrahim@inventory.com",
+            "password": "Mon@3456"
+        },
+        {
+            "id": "5",
+            "name": "Youssef Khaled",
+            "username": "youssef.khaled",
+            "email": "youssef.khaled@inventory.com",
+            "password": "You@7890"
+        },
+        {
+            "id": "6",
+            "name": "Nour Ahmed",
+            "username": "nour.ahmed",
+            "email": "nour.ahmed@inventory.com",
+            "password": "Nou@1122"
+        },
+        {
+            "id": "7",
+            "name": "Mahmoud Samy",
+            "username": "mahmoud.samy",
+            "email": "mahmoud.samy@inventory.com",
+            "password": "Mah@3344"
+        },
+        {
+            "id": "8",
+            "name": "Huda Adel",
+            "username": "huda.adel",
+            "email": "huda.adel@inventory.com",
+            "password": "Hud@5566"
+        },
+        {
+            "id": "9",
+            "name": "Karim Tarek",
+            "username": "karim.tarek",
+            "email": "karim.tarek@inventory.com",
+            "password": "Kar@7788"
+        },
+        {
+            "id": "10",
+            "name": "Salma Mostafa",
+            "username": "salma.mostafa",
+            "email": "salma.mostafa@inventory.com",
+            "password": "Sal@9900"
+        },
+        {
+            "id": "11",
+            "name": "Hassan Fathy",
+            "username": "hassan.fathy",
+            "email": "hassan.fathy@inventory.com",
+            "password": "Has@2468"
+        },
+        {
+            "id": "12",
+            "name": "Dina Sherif",
+            "username": "dina.sherif",
+            "email": "dina.sherif@inventory.com",
+            "password": "Din@1357"
+        },
+        {
+            "id": "13",
+            "name": "Tamer Nabil",
+            "username": "tamer.nabil",
+            "email": "tamer.nabil@inventory.com",
+            "password": "Tam@8642"
+        },
+        {
+            "id": "14",
+            "name": "Reem Ashraf",
+            "username": "reem.ashraf",
+            "email": "reem.ashraf@inventory.com",
+            "password": "Ree@9753"
+        },
+        {
+            "id": "15",
+            "name": "Mostafa Adel",
+            "username": "mostafa.adel",
+            "email": "mostafa.adel@inventory.com",
+            "password": "Mos@4826"
+        }
+    ],
+    "$schema": "./node_modules/json-server/schema.json"
 }
