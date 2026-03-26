@@ -8,6 +8,9 @@ const searchInput = document.getElementById("categorySearch");
 const addCategoryBtn = document.getElementById("addCategoryBtn");
 const paginationContainer = document.querySelector(".table-footer .pagination");
 
+renderNavbar("Category");
+renderFooter();
+
 // Data
 let categoriesData = [];
 let filteredData = [];
