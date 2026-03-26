@@ -1,10 +1,14 @@
 const baseURL = "http://localhost:3000/"
 
 // ^ Get Data form json file
-async function getData(endpoint) {
-	const response = await fetch(`${baseURL}${endpoint}`);
+async function getData(endpoint, query = "") {
+	const response = await fetch(`${baseURL}${endpoint}${query}`);
 	if (!response.ok) throw new Error(`Failed to get ${endpoint}`);
-	return await response.json();
+	const data = await response.json();
+	return {
+		data,
+		totalCount: Number(response.headers.get("X-Total-Count")) || 0
+	};
 }
 
 // ^ Post data to json file

@@ -1,2 +1,0 @@
-renderNavbar("Reports");
-renderFooter()

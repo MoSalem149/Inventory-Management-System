@@ -88,7 +88,7 @@ const closeModal = function () {
   modal.classList.add('hidden')
   modalOverlay.classList.add('hidden')
 }
-const showMoal = function () {
+const showModal = function () {
   modal.classList.remove('hidden')
   modalOverlay.classList.remove('hidden')
 }
@@ -105,6 +105,7 @@ const showMoal = function () {
  * @param {*} dataInInnerHTML :--> tbody (table)
  * @returns 
  */
+
 // ^ search By Name
 async function searchByName(endpoint, searchInputValue) {
   let pageData = await getData(`${endpoint}`)
@@ -112,7 +113,6 @@ async function searchByName(endpoint, searchInputValue) {
     return data.name.toLowerCase().includes(searchInputValue.toLowerCase()) || data.contactPerson.toLowerCase().includes(searchInputValue.toLowerCase()) || data.email.toLowerCase().includes(searchInputValue.toLowerCase())
   });
   return dataAfterFilteration;
-
 }
 
 // ^ filter By Status
@@ -127,8 +127,6 @@ async function filterByStatus(selectValue, endpoint) {
 
 
 
-
-
 // * Sort Functionality (Should be suitable for all pages)
 
 
@@ -136,6 +134,75 @@ async function filterByStatus(selectValue, endpoint) {
 
 // * Pagination
 
+// ~ notes for pagination in Yur HTML you should only add this html tag at the same level of your table of data
+// * <div id="pagination" class="container w-50 d-flex align-items-center justify-content-between"> </div > 
+
+// & Calculate total pages number
+function getTotalPages(totalCount, limit) {
+  return Math.ceil(totalCount / limit);
+}
+
+// & Rendering Pagination
+// ^ Container > is the pagination container you want buttons inside 
+// ^ state > I added it in each js page so you can control pagination state using one VARIABLE (Object) istead ot multiple Variables
+// ^ onPageChange > is a parameter representing the renderTable function which is used to render data in the table from the json file
+
+// ! Don't forget to call it every time (After rendering data and if no products found also but not in < network error > (Getting data from json file))
+
+function renderPagination(container, state, onPageChange) {
+  if (!container) {
+    console.error("Pagination container not found");
+    return;
+  }
+
+  container.innerHTML = "";
+
+  const totalPages = Math.ceil(state.totalCount / state.limit);
+
+  if (totalPages <= 1) return;
+
+  const prevBtn = document.createElement("button");
+  prevBtn.textContent = "Prev";
+  prevBtn.classList.add('prevBtn')
+  prevBtn.disabled = state.page === 1;
+  prevBtn.addEventListener("click", function () {
+    if (state.page > 1) {
+      state.page--;
+      onPageChange();
+    }
+  });
+  container.appendChild(prevBtn);
+
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement("button");
+    btn.classList.add('pagePaginateBtn')
+    btn.textContent = i;
+
+    if (i === state.page) {
+      btn.classList.add("active");
+      btn.classList.add('colored')
+    }
+
+    btn.addEventListener("click", function () {
+      state.page = i;
+      onPageChange();
+    });
+
+    container.appendChild(btn);
+  }
+
+  const nextBtn = document.createElement("button");
+  nextBtn.textContent = "Next";
+  nextBtn.classList.add('nextBtn')
+  nextBtn.disabled = state.page === totalPages;
+  nextBtn.addEventListener("click", function () {
+    if (state.page < totalPages) {
+      state.page++;
+      onPageChange();
+    }
+  });
+  container.appendChild(nextBtn);
+}
 
 
 // * ID lookup

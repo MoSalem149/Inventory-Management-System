@@ -45,6 +45,7 @@ th[colspan="2"] {
 .table tbody td {
   padding: var(--space-5);
   border-top: 1px solid #eee;
+  vertical-align: middle;
 }
 .product-cell {
   display: flex;
@@ -78,7 +79,7 @@ th[colspan="2"] {
   color: #5d5a85 !important;
   font-weight: bold;
 }
-#editProductBtn {
+.editProductBtn {
   background: var(--primary);
   color: white;
   border: none;
@@ -89,10 +90,10 @@ th[colspan="2"] {
   font-weight: bold;
   transition: var(--transition-fast);
 }
-#editProductBtn:hover {
+.editProductBtn:hover {
   background-color: var(--primary-hover);
 }
-#removeProductBtn {
+.removeProductBtn {
   background: var(--danger);
   color: white;
   border: none;
@@ -103,7 +104,7 @@ th[colspan="2"] {
   font-weight: bold;
   transition: var(--transition-fast);
 }
-#removeProductBtn:hover {
+.removeProductBtn:hover {
   background-color: var(--danger-dark);
 }
 .status {

@@ -1,4 +1,4 @@
-renderNavbar("Orders");
+renderNavbar("Reports");
 renderFooter()
 
 // & For pagination
