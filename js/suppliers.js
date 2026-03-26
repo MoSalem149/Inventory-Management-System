@@ -1,5 +1,56 @@
+
 renderNavbar("Suppliers");
-renderFooter()
+renderFooter();
+renderDataofSuppliers();
+
+
+let showDatainTable = document.querySelector('tbody');
+let searchBySupplierName = document.querySelector('#searchBySupplierName');
+let formSelect = document.querySelector('#formSelect');
+let addSupplier = document.querySelector('#addSupplier');
+let modal = document.querySelector('.modal')
+let supplierName = document.querySelector('#supplierName');
+let contactPerson = document.querySelector('#contactPerson');
+let supplierMail = document.querySelector('#supplierMail');
+let supplierPhone = document.querySelector('#supplierPhone');
+let selectStatus = document.querySelector('#select');
+let physicalAddress = document.querySelector('textarea');
+let saveSupplier = document.querySelector('#saveSupplier');
+let targetID = null;
+
+
+validateInputAdd_Edit();
+
+
+//  ////////////// Search By Suppliers Name ////////////////// 
+
+searchBySupplierName.addEventListener('input', async () => {
+    let searchInputValue = searchBySupplierName.value;
+
+    let search = await searchByName('suppliers', searchInputValue);
+    // console.log(search);
+    if (search.length == 0) {
+        showDatainTable.classList.add('dataNotMatch')
+        showDatainTable.innerHTML = 'No Data Matched!!';
+    }
+    else {
+        showDatainTable.innerHTML = ''
+        renderDataAfterFilteration(search);
+        showDatainTable.classList.remove('dataNotMatch')
+
+    }
+
+})
+
+///////////////// filter by status /////////////////
+formSelect.addEventListener('change', async () => {
+    let formSelectFilter = await filterByStatus(formSelect, 'suppliers')
+    //   console.log(formSelectFilter)
+    showDatainTable.innerHTML = '';
+    renderDataAfterFilteration(formSelectFilter);
+
+})
+
 
 
 // ///////////////// Logo of Suppliers Name ////////////////////
@@ -17,7 +68,7 @@ function firstLatterOfSuppliers(SuppliersName) {
 // ///////////// ^ Get Data form json file //////////////
 async function renderDataofSuppliers() {
     let suppliersData = (await getData('suppliers')).data
-     console.log(suppliersData);
+    //  console.log(suppliersData);
     renderDataAfterFilteration(suppliersData);
 
 }
@@ -133,5 +184,3 @@ saveSupplier.addEventListener('click', (e) => {
                     status:selectStatus.value,
                 })
     })
-
-

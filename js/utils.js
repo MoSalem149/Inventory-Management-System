@@ -26,15 +26,15 @@ function renderNavbar(activePage) {
 
     </nav>
   `;
-
-  //   Second NavBar
+//   Second NavBar
   const pages = [
     { label: "Dashboard", icon: "fa-gauge", href: "dashboard.html" },
     { label: "Products", icon: "fa-box", href: "products.html" },
     { label: "Categories", icon: "fa-tags", href: "categories.html" },
     { label: "Suppliers", icon: "fa-truck", href: "suppliers.html" },
     { label: "Orders", icon: "fa-cart-shopping", href: "orders.html" },
-    { label: "Reports", icon: "fa-chart-bar", href: "reports.html" },
+    { label: "InventoryInsights", icon: "fa-chart-bar", href: "inventoryInsights.html" },
+    { label: "InventoryOverview", icon: "fa-chart-bar", href: "inventoryOverview.html" },
   ];
 
   const navItems = pages
@@ -42,7 +42,7 @@ function renderNavbar(activePage) {
       (page) => `
     <li class="nav-item">
         <a class="nav-link ${activePage === page.label ? "active" : ""}" href="${page.href}">
-            <i class="fas ${page.icon} me-1"></i>${page.label}
+            <i class="fas ${page.icon} me-1"></i>${((page.label).split('y')).join('y ')}
         </a>
     </li>
   `,
@@ -88,7 +88,7 @@ const closeModal = function () {
   modal.classList.add('hidden')
   modalOverlay.classList.add('hidden')
 }
-const showMoal = function () {
+const showModal = function () {
   modal.classList.remove('hidden')
   modalOverlay.classList.remove('hidden')
 }
@@ -108,7 +108,7 @@ const showMoal = function () {
 
 // ^ search By Name
 async function searchByName(endpoint, searchInputValue) {
-  let pageData = (await getData(`${endpoint}`)).data
+  let pageData = (await getData(`${endpoint}`)).data;
   let dataAfterFilteration = pageData.filter((data) => {
     return data.name.toLowerCase().includes(searchInputValue.toLowerCase()) || data.contactPerson.toLowerCase().includes(searchInputValue.toLowerCase()) || data.email.toLowerCase().includes(searchInputValue.toLowerCase())
   });
@@ -117,7 +117,7 @@ async function searchByName(endpoint, searchInputValue) {
 
 // ^ filter By Status
 async function filterByStatus(selectValue, endpoint) {
-  let pageData = (await getData(`${endpoint}`)).data
+  let pageData = (await getData(`${endpoint}`)).data;
   if (selectValue.value !== '') {
     return pageData.filter((data) => {
       return data.status.toLowerCase() === selectValue.value.toLowerCase()
@@ -131,6 +131,8 @@ async function filterByStatus(selectValue, endpoint) {
 
 
 
+
+// * Pagination
 
 // ~ notes for pagination in Yur HTML you should only add this html tag at the same level of your table of data
 // * <div id="pagination" class="container w-50 d-flex align-items-center justify-content-between"> </div > 
@@ -251,14 +253,13 @@ function validateInputs(regexForValidInput, NameInputValidate, messageShowForUse
 
 function validateSelect(selectValidate) {
 
-  if (selectValidate.value == '') {
+  if (selectValidate.value === '') {
     selectValidate.setCustomValidity('please select value')
     selectValidate.reportValidity();
   }
 
   else {
     selectValidate.setCustomValidity("");
-    selectValidate.reportValidity()
   }
 
 }
