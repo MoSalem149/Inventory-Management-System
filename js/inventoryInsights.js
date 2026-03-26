@@ -1,5 +1,5 @@
-renderNavbar("Orders");
-renderFooter();
+renderNavbar("Reports");
+renderFooter()
 
 // & For pagination
 const state = {
