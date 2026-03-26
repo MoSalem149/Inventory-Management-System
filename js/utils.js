@@ -83,6 +83,8 @@ function renderFooter() {
   document.getElementById('footer').innerHTML = footer;
 }
 
+
+
 // * Modal Helpers
 
 const closeModal = function () {
@@ -92,109 +94,4 @@ const closeModal = function () {
 const showMoal = function () {
   modal.classList.remove('hidden')
   modalOverlay.classList.remove('hidden')
-}
-
-
-
-
-// * Search functionality (Should be suitable for all pages)
-
-/**
- * 
- * @param {*} endpoint :--> from api (http://localhost:3000/${endpoint})
- * @param {*} searchInputValue :--> search input Selector
- * @param {*} dataInInnerHTML :--> tbody (table)
- * @returns 
- */ 
-    //  search By Name
-async function searchByName(endpoint, searchInputValue) {
-  let pageData = await getData(`${endpoint}`)
-  let dataAfterFilteration = pageData.filter((data) => {
-    return data.name.toLowerCase().includes(searchInputValue.toLowerCase()) || data.contactPerson.toLowerCase().includes(searchInputValue.toLowerCase()) || data.email.toLowerCase().includes(searchInputValue.toLowerCase()) 
-  });
-    return dataAfterFilteration;
-    
-}
-
-  //  filter By Status
-async function filterByStatus(selectValue , endpoint) {
-  let pageData = await getData(`${endpoint}`)
-  if (selectValue.value !== '') {
-    return pageData.filter((data) => {
-      return data.status.toLowerCase() === selectValue.value.toLowerCase()
-    });
-  }
-}
-
-
-
-
-
-// * Sort Functionality (Should be suitable for all pages)
-
-
-
-
-// * Pagination
-
-
-
-// * ID lookup
-
-
-
-
-
-// * Validation 
-
-//  /////////////// Validate Name for any ////////////////
-
-/**
- * 
- * @param {*} regexForValidInput : 
- *      for Name :--> ^[A-Za-z\\s]{3,60}$
- *      for Price || Cost :--> ^(100|[1-9][0-9]{2,})$
- *      for Initial quentity:--> ^(1|[1-9][0-9]{2,})$
- * @param {*} NameValidate : 
- *       NameInputValidate :--> input Selector
- * @param {*} messageShowForUser 
- *       messageShowForUser :--> message shown through Validate 
- *       for Name :--> Please Enter Valid ${any Name} :\n  Must Name contains at  -> from 3 character to 40 character!!!
- *       for Price || Cost :-->  Value Must be large than or equal 100
- *       for Initial quentity :--> ...
- * 
- */
-
-function validateInputs(regexForValidInput, NameInputValidate, messageShowForUser) {
-  const constraints = `${regexForValidInput}`;
-  const constraintRegex = new RegExp(constraints, "");
-
-  if (constraintRegex.test(NameInputValidate.value)) {
-
-    NameInputValidate.setCustomValidity("");
-    NameInputValidate.checkValidity()
-    NameInputValidate.style.border = '2px solid rgb(0, 208, 59)';
-
-  }
-  else {
-
-    NameInputValidate.setCustomValidity(`${messageShowForUser}`);
-    NameInputValidate.reportValidity();
-    NameInputValidate.style.border = '2px solid rgba(255, 89, 89, 0.89)';
-
-  }
-}
-
-function validateSelect(selectValidate) {
-
-  if (selectValidate.value == '') {
-    selectValidate.setCustomValidity('please select value')
-    selectValidate.reportValidity();
-  }
-
-  else {
-    selectValidate.setCustomValidity("");
-    selectValidate.reportValidity()
-  }
-
 }
