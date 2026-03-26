@@ -111,10 +111,3 @@
   background-color: var(--primary-hover);
   color: var(--text-white);
 }
-
-.incorrect{
-  color: red;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}

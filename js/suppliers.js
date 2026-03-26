@@ -59,6 +59,7 @@ async function renderDataofSuppliers() {
     let suppliersData = await getData('suppliers')
     //  console.log(suppliersData)
     renderDataAfterFilteration(suppliersData);
+
 }
 
 //  //////////////////  Validate inputs ///////////////////
@@ -75,7 +76,7 @@ modal.addEventListener('shown.bs.modal', function () {
 
      //  ///////// validate Email /////////
     let emailValidate = document.querySelector('#email');
-    emailValidate.addEventListener('input', ()=> validateInputs('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', emailValidate ,`Please include an '@' in the email address. '${emailValidate.value}' is missing an '@'!!!`));
+    emailValidate.addEventListener('input', ()=> validateInputs('^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$', emailValidate ,`Please include an '@' in the email address. '${emailValidate.value}' is missing an '@'!!!`));
 
      //  ///////// validate Phone /////////
     let phoneValidate = document.querySelector('#Phone');
@@ -93,7 +94,7 @@ modal.addEventListener('shown.bs.modal', function () {
 
 
 
-// //////////////////////  Render Data After Filteration ///////////////////////
+// //////////////////////  Render Data After Filteration ////////////////////////
 function renderDataAfterFilteration(dataAfterFilter){
         dataAfterFilter.forEach(dataFilter => {
            showDatainTable.innerHTML += `
@@ -123,11 +124,3 @@ function renderDataAfterFilteration(dataAfterFilter){
             `
     });
 }
-
-// //////////////////////  Post data to json file  /////////////////////////////
-let addSupplier = document.querySelector('#addSupplier');
-
-// ////////////////  Update existing data in json file  ////////////////////////
-
-
-// //////////////////////  Delete data from jsom file  /////////////////////////
