@@ -146,7 +146,15 @@ textarea {
 .card {
   border-radius: var(--radius-md);
 }
-
+.dataNotMatch {
+  text-align: center;
+  color: var(--text-secondary);
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+  overflow-x: hidden;
+}
 
 /*y NavBar */
 #second-navbar .nav-link {
@@ -169,6 +177,54 @@ textarea {
   font-weight: 600;
 }
 
+/*y Pagination Buttons */
+
+.prevBtn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  width: fit-content;
+  min-width: fit-content;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: var(--transition-fast);
+}
+
+.prevBtn:hover {
+  background-color: var(--primary-hover);
+}
+
+.pagePaginateBtn {
+  background: var(--primary-light);
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  width: fit-content;
+  min-width: fit-content;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: var(--transition-fast);
+}
+
+.colored {
+  background-color: var(--primary-hover);
+}
+
+.nextBtn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  width: fit-content;
+  min-width: fit-content;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: var(--transition-fast);
+}
+.nextBtn:hover {
+  background-color: var(--primary-hover);
+}
 footer {
   background-color: var(--primary);
   min-height: 80px;
