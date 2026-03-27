@@ -60,8 +60,8 @@ async function loadAndRenderSuppliers() {
     state.totalCount = suppliersData.length
     renderTable();
     renderPagination(paginationContainer, state, renderTable);
-   
-    
+
+
 }
 //  //// Search By Suppliers Name ///// 
 
@@ -131,7 +131,7 @@ function renderSuppliersRows(dataAfterFilter) {
                             </td>
                 </tr>
             `
-            
+
     });
 }
 
@@ -171,7 +171,13 @@ function setupInputValidation() {
 /////  Post data to json file  ////
 addSupplier.addEventListener('click', () => {
     let newSupplierId = 20;
-    // if(supplierName.value == )
+    
+    supplierName.value = '';
+    contactPerson.value = ''
+    supplierPhone.value = ''
+    supplierMail.value = ''
+    physicalAddress.value = ''
+    selectStatus.value = ''
 
     saveSupplier.addEventListener('click', (e) => {
         e.preventDefault();
