@@ -153,7 +153,3 @@ async function renderProducts() {
 		console.error(error);
 	}
 }
-
-
-
-
