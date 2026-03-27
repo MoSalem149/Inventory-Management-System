@@ -1,4 +1,3 @@
-
 renderNavbar("Suppliers");
 renderFooter();
 renderDataofSuppliers();
@@ -70,7 +69,6 @@ async function renderDataofSuppliers() {
     let suppliersData = (await getData('suppliers')).data
     //  console.log(suppliersData);
     renderDataAfterFilteration(suppliersData);
-
 }
 
 
@@ -136,7 +134,7 @@ function validateInputAdd_Edit() {
 
 
 
-// ////////////////  Update $ Delete Suppliers ////////////////////////
+//  Update $ Delete Suppliers
 
 showDatainTable.addEventListener('click', (e) => {
 
@@ -172,6 +170,7 @@ showDatainTable.addEventListener('click', (e) => {
             }
     }
 })
+
 // ///////////////  save changing after Edit //////////////////
 saveSupplier.addEventListener('click', (e) => {
     e.preventDefault();
