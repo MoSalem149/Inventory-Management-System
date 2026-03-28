@@ -61,6 +61,7 @@ async function loadAndRenderSuppliers() {
     renderTable();
     renderPagination(paginationContainer, state, renderTable);
 
+
 }
 //  //// Search By Suppliers Name ///// 
 
@@ -170,7 +171,7 @@ function setupInputValidation() {
 /////  Post data to json file  ////
 addSupplier.addEventListener('click', () => {
     let newSupplierId = 20;
-    
+
     supplierName.value = '';
     contactPerson.value = ''
     supplierPhone.value = ''
@@ -244,5 +245,4 @@ showDatainTable.addEventListener('click', (e) => {
         }
     }
 })
-
 
