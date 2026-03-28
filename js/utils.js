@@ -117,8 +117,8 @@ async function searchByName(endpoint, searchInputValue) {
 
 // ^ filter By Status
 async function filterByStatus(selectValue, endpoint) {
-  let pageData = (await getData(`${endpoint}`)).data;
-  if (selectValue.value !== '') {
+  let pageData = (await getData(`${endpoint}`)).data
+  if (!selectValue.value || selectValue.value !=='all') {
     return pageData.filter((data) => {
       return data.status.toLowerCase() === selectValue.value.toLowerCase()
     });
