@@ -1,14 +1,25 @@
 const jsonServer = require("json-server");
 const path = require("path");
+const fs = require("fs");
+
 const server = jsonServer.create();
 
-// Use an absolute path to the db.json file
-const router = jsonServer.router(path.join(__dirname, "..", "data", "db.json"));
+// Correctly resolve the path to db.json relative to this file
+const dbPath = path.resolve(__dirname, "../data/db.json");
+
+// Log the path to help with debugging if needed (check Vercel logs)
+console.log("Loading db from:", dbPath);
+
+if (!fs.existsSync(dbPath)) {
+  console.error("Database file not found at:", dbPath);
+}
+
+const router = jsonServer.router(dbPath);
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 
-// Add a rewrite rule to handle the /api prefix
+// Ensure the /api prefix is handled correctly
 server.use(
   jsonServer.rewriter({
     "/api/*": "/$1",
