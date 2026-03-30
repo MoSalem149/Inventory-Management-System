@@ -1,6 +1,6 @@
 {
     "name": "inventrack",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A web-based inventory management system with dashboard, REST API, and reporting.",
     "main": "api/index.js",
     "module": "api/index.js",
@@ -8,7 +8,11 @@
         ".": "./api/index.js"
     },
     "files": [
-        "api/"
+        "api/",
+        "backend/",
+        "frontend/",
+        "vercel.json",
+        "README.md"
     ],
     "keywords": [
         "inventory",
@@ -17,11 +21,16 @@
         "management",
         "node-module"
     ],
-    "author": "Mohamed Wael Salem",
+    "authors": [
+        "Mohamed Wael Salem",
+        "Esraa Aziz Mahmoud",
+        "Ahmed Ashraf Khattab",
+        "Mohamed Elshahat Amer"
+    ],
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/MoSalem149/Inventory-Management-System.git"
     },
     "dependencies": {
         "json-server": "^0.17.4"
