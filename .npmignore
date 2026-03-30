@@ -1,7 +1,1 @@
-frontend/
-backend/
-vercel.json
-README.md
 *.log
-*.md
-.gitignore
