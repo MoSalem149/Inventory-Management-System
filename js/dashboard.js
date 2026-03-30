@@ -121,7 +121,7 @@ function renderRecentActivity(products, suppliers, stockMovements) {
 			return {
 				iconClass: iconClasses[index % iconClasses.length],
 				icon: icons[index % icons.length],
-				text: movement.name,
+				text: movement.name || movement.productName,
 				meta: `${movement.createdAt} by ${movement.createdBy}`
 			};
 		});
