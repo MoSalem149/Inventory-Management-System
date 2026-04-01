@@ -168,7 +168,7 @@ textarea {
 
 #second-navbar .nav-link:hover {
   background-color: var(--primary-light);
-  color: var(--primary) !important;
+  color: var(--text-primary) !important;
 }
 
 #second-navbar .nav-link.active {
