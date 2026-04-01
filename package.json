@@ -1,6 +1,6 @@
 {
     "name": "inventrack",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "description": "A web-based inventory management system with dashboard, REST API, and reporting.",
     "main": "api/index.js",
     "module": "api/index.js",
